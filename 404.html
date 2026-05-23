@@ -1,13 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="refresh" content="0; url=/" />
-    <title>Redirecting...</title>
-</head>
-<body>
-    <p>Redirecting to the main site...</p>
-    <p><a href="/">Click here if you are not redirected.</a></p>
-</body>
-</html>
+---
+layout: default
+title: Error 404
+page_class: error-page
+permalink: /404.html
+---
+
+<section class="error-content">
+    <p class="error-code">404</p>
+
+    <h1>Page not found</h1>
+
+    <p>
+        The page you are looking for does not exist, may have moved,
+        or the link may be incorrect.
+    </p>
+
+    <a class="button" href="{{ '/' | relative_url }}">Return home</a>
+</section>
